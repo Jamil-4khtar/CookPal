@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <h2>C<span>oo</span>kPal</h2>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+            <p></p>
+        </nav>
+    </header>
+    <div class="img-cont">
+        <div class="poster">
+            <p>Trending now</p>
+            <h1>Mike’s famous salad with cheese</h1>
+            <p>By John Mike</p>
+            <img src="./img/image.png" alt="">
+        </div>
+    </div>
+    <div class="search-cont">
+        <h3>Search For Recipes</h3>
+        <div class="inputbtn">
+            <input type="text" id="searchBar" placeholder="Search for recipes">
+            <img src="./img/search.svg" alt="">
+        </div>
+    </div>
+    <div class="recipe-type">
+        <div class="all typeC">
+            <p>All Recipes</p><b>></b>
+        </div>
+        <div class="veg typeC">
+            <p>Veg Recipes Only</p><b>></b>
+        </div>
+        <div class="non-veg typeC">
+            <p>Non-veg Recipes</p><b>></b>
+        </div>
+    </div>
+    <div class="main">
+        <div class="filter-cont">
+            <h3>Filter</h3>
+            <p>Rating</p>
+            <form class="filter-rating">
+                <input type="checkbox" value="check" id="above">
+                <label for="above">4 and above</label>
+                <br>
+                <input type="checkbox" value="check" id="below">
+                <label for="below">Below 4</label>
+            </form>
+        </div>
+        <div class="recipe-grid"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

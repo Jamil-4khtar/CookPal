@@ -1,0 +1,161 @@
+.head>h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.head>h2>span {
+    color: green;
+}
+
+.head>nav {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head>nav>ul {
+    display: flex;
+    gap: 50px;
+}
+
+.head>nav>ul>li {
+    list-style: none;
+}
+
+.head>nav>ul>li>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.head>nav>ul>li>a:active {
+    color: rgba(4, 189, 53, 0.63);
+}
+
+.head>nav>p {
+    width: 50px;
+    height: 50px;
+    background-image: -webkit-linear-gradient(rgba(9, 75, 136, 0.644), rgba(4, 189, 53, 0.63));
+
+    border-radius: 50%;
+}
+
+.poster {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster>p:nth-of-type(1) {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    left: 128px;
+    color: #DC582A;
+    font-size: medium;
+}
+
+.poster>p:nth-of-type(2) {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    z-index: -1;
+    top: 290px;
+    left: 128px;
+    color: #FFFFFF;
+    font-size: small;
+
+}
+
+.poster>h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: x-large;
+    position: absolute;
+    z-index: -1;
+    top: 220px;
+    left: 128px;
+    width: 300px;
+    color: white;
+}
+
+
+.poster>img {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+.search-cont>.inputbtn {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.search-cont>h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+.inputbtn>input {
+    width: 96%;
+    border-left: 1px solid rgba(77, 75, 75, 0.450);
+    border-top: 1px solid rgba(77, 75, 75, 0.450);
+    border-bottom: 1px solid rgba(77, 75, 75, 0.450);
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.inputbtn>img {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.typeC {
+    display: flex;
+    gap: 20px;
+    width: 170px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+
+.all {
+    background: #EAAA00;
+}
+
+.veg {
+    background: #C4D600;
+}
+
+.non-veg {
+    background: #DC582A;
+}
+
+.filter-rating {
+    font-size: x-small;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.like-button{
+    cursor: pointer;
+    width: 20px !important;
+    height: 20px !important;
+    
+}
+
+.like-button.liked {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}

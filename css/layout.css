@@ -1,0 +1,61 @@
+.head {
+    /* width: 89.25%; */
+    width: 100%;
+    position: fixed;
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: -80px;
+}
+.img-cont {
+    /* border: 1px solid red; */
+    padding-top: 80px;
+    width: 100%;
+}
+.search-cont {
+    /* border: 1px solid red; */
+    padding-top: 20px;
+    width: 100%;    
+}
+.recipe-type {
+    /* border: 1px solid red; */
+    padding-top: 20px;
+    width: 750px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main {
+    min-height: 300px;
+    padding-top: 20px;
+    /* padding-left: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+.filter-cont {
+    background: rgba(128, 0, 128, 0.429);
+    display: block;
+    line-height: 30px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.recipe-grid {
+    background: grey;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    
+}
