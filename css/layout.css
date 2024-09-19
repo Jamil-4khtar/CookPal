@@ -40,14 +40,14 @@
 
 }
 .filter-cont {
-    background: rgba(128, 0, 128, 0.429);
+    /* background: rgba(128, 0, 128, 0.429); */
     display: block;
     line-height: 30px;
     padding: 10px;
     font-family: "Poppins", sans-serif;
 }
 .recipe-grid {
-    background: grey;
+    /* background: grey; */
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
