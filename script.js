@@ -140,26 +140,26 @@ function showRecipes(recipes = arr) {
             <h3>${recipe.name}</h3>
             <p>${recipe.time} - ${recipe.type}</p>
             <p>Rating: ${recipe.rating}</p>
+            <button class="like-button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="2" />
+    </svg>
+  </button>
         `;
-        grid.append(card);
-        let like = document.createElement("img");
-        like.src = "./img/like.svg"
-        like.className = `like-button ${recipe.isLiked ? 'liked' : ''}`;
-        like.addEventListener("click", () => {
-            toggleLike(recipe.name)
+        const likeButton = card.querySelector('.like-button');
+        const svg = likeButton.querySelector("svg");
+        svg.addEventListener('click', function () {
+            svg.classList.toggle('liked');
+            recipe.isLiked = !recipe.isLiked;
+            console.log(recipe.isLiked);
+
         });
 
-        card.append(like)
+        grid.append(card);
 
     });
 }
-function toggleLike(recipeName) {
-    const recipe = arr.find(r => r.name === recipeName);
-    console.log(recipe);
 
-    recipe.isLiked = !recipe.isLiked;
-    showRecipes(); // Re-render recipes to update like state
-}
 
 searchBar.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();

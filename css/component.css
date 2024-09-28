@@ -146,16 +146,20 @@
     object-fit: cover;
 }
 
-.like-button{
-    cursor: pointer;
-    width: 20px !important;
-    height: 20px !important;
-    
+.like-button {
+    border: none;
 }
 
-.like-button.liked {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
+.like-button svg {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    fill: none;
+    stroke: currentColor;
+}
+
+.like-button svg.liked {
+    fill: red;
+    stroke: red;
+    transition: fill 0.3s ease;
+    transform: scale(1.1);
 }

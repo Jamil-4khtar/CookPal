@@ -53,6 +53,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
+
+.recipe-card {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+}
 .recipe-card img {
     width: 100%;
     height: 150px;
